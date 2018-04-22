@@ -790,8 +790,8 @@ footer ul li {
   border-radius: 100%;
   position: fixed;
   display: none;
-  bottom: 100px;
-  right: 100px;
+  bottom: 50px;
+  right: 50px;
   z-index: 999;
   transition: all 700ms ease-out;
   background: url(img/top-btn.svg);
@@ -972,10 +972,6 @@ footer ul li {
   .case-cnt-right-extra {
     max-width: 100%;
     margin-left: 0;
-  }
-  #top-btn {
-    bottom: 50px;
-    right: 50px;
   }
 }
 
