@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Drake Dereniowski | UX Designer | Milan, Italy</title>
+
+  <link type="text/css" rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header>
+
+      <h5 class="logo">
+        <a href="index.html">
+          <span class="logo-name">Drake</span>
+          <span class="logo-line"></span>
+          <span class="logo-text">The Designer</span>
+        </a>
+      </h5>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#projects-wrap">Work</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="mailto:drake.dereniowski@gmail.com">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="home">
+
+      <h1 class="main-text">Hello, I’m Drake. I’m a
+        <b>UX Designer</b> based in
+        <b>Milan</b>. Nice to meet you.</h1>
+
+      <a href="#projects-wrap" class="view-work">
+        <span class="work-line"></span>
+        <h5 class="view-work-txt">View Work</h5>
+      </a>
+
+    </main>
+
+
+    <section id="projects-wrap">
+      <h2 class="work-title">Selected Projects</h2>
+      <div class="card-wrap">
+
+        <a href="lvmh.html" class="project project-first foo">
+          <div class="project-card lvmh-container">
+            <img class="project-logo lozad" data-src="img/lvmh-logo.png">
+          </div>
+          <h4 class="company-title">LVMH Group</h4>
+          <h5>UX/UI Design</h5>
+        </a>
+
+        <a href="spd-oakley.html" class="project project-second foo">
+          <div class="project-card oakley-container">
+            <img class="project-logo lozad" data-src="img/Oakley-Logo.png">
+          </div>
+          <h4 class="company-title">SPD: Oakley</h4>
+          <h5>UX Design/Research</h5>
+        </a>
+
+        <a href="bmo.html" class="project project-third foo">
+          <div class="project-card bmo-container">
+            <img class="project-logo lozad" data-src="img/bmo-logo.png">
+          </div>
+          <h4 class="company-title">BMO Financial Group</h4>
+          <h5>UX Design Intern</h5>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <section class="footer-cnt">
+        <h5 class="logo">
+          <a href="index.html">
+            <span class="logo-name">Drake</span>
+            <span class="logo-line"></span>
+            <span class="logo-text">The Designer</span>
+          </a>
+        </h5>
+
+        <ul>
+          <li>
+            <a href="mailto:drake.dereniowski@gmail.com">Email</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/drakedereniowski/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="#">Resume</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+
+
+  <script src="JS/scrollreveal.js"></script>
+  <script src="JS/smooth-scroll.js"></script>
+
+  <!--- Lazy Load !-->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+
+  <!-- Smooth Scroll Script !-->
+
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+      // Speed & Easing
+      speed: 1750, // Integer. How fast to complete the scroll in milliseconds
+      offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeOutQuad', // Easing pattern to use
+      customEasing: function (time) {
+
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+
+        // return <your formulate with time as a multiplier>
+
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+      },
+
+      // Callback API
+      before: function (anchor, toggle) {}, // Callback to run before scroll
+      after: function (anchor, toggle) {} // Callback to run after scroll
+    });
+  </script>
+
+
+  <!--- Lazy Load Script !-->
+
+  <script>
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+  </script>
+
+  <!--- Scroll Reveal Script !-->
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.foo');
+    sr.reveal('.bar');
+
+    sr.reveal('.foo', {
+      duration: 1500
+    })
+
+    sr.reveal('.foo', {
+      scale: 1
+    });
+
+    sr.reveal('.foo', {
+      distance: '5px'
+    });
+
+    sr.reveal('.foo', {
+      easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+    });;
+  </script>
+
+
+</body>
+
+</html>
