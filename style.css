@@ -893,6 +893,9 @@ footer ul li {
   .analytics-graph {
     margin: 48px 0;
   }
+  .footer-cnt {
+    margin-top: 112px;
+  }
 }
 
 /* 950px - Max-Width */
@@ -941,6 +944,11 @@ footer ul li {
     max-width: 95%;
     padding: 0px 20px;
   }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
   .case-section {
     flex-direction: column;
   }
@@ -953,6 +961,9 @@ footer ul li {
   .case-cnt-right-extra {
     max-width: 100%;
     margin-left: 0;
+  }
+  .drake-img {
+    margin: 40px 0;
   }
 }
 
@@ -983,10 +994,6 @@ footer ul li {
     max-width: 100%;
   }
 
-  .drake-img {
-    margin: 40px 0;
-  }
-
   .case-spacing {
     margin: 64px 0;
   }
@@ -998,10 +1005,6 @@ footer ul li {
   .img-margin,
   .img-wrap-multi {
     margin: 56px 0;
-  }
-
-  .footer-cnt {
-    margin-top: 112px;
   }
 }
 
@@ -1022,14 +1025,11 @@ footer ul li {
   }
   .case-wrap {
     justify-content: space-around;
-    align-items: flex-end;
   }
   .case-intro {
-    height: 90%;
     justify-content: center;
   }
   .case-summary {
-    flex-direction: column;
     margin-top: 48px;
     align-self: flex-end;
   }
@@ -1041,7 +1041,8 @@ footer ul li {
     margin-bottom: 0;
   }
   .case-title {
-    padding-bottom: 24px;
+    padding-bottom: 0;
+    font-size: 2em;
   }
 }
 
@@ -1070,9 +1071,13 @@ footer ul li {
   }
 
   .main-nav-list {
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 24px;
     width: 100%;
+  }
+
+  .main-nav-list li {
+    padding-left: 0;
   }
 
   .home {
@@ -1092,7 +1097,6 @@ footer ul li {
   }
 
   .case-title {
-    padding-bottom: 16px;
   }
 
   .case-data h4 {
@@ -1102,6 +1106,9 @@ footer ul li {
   .case-summary {
     margin-top: 0;
     align-self: flex-start;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .case-summary li {
@@ -1114,6 +1121,15 @@ footer ul li {
     justify-content: space-evenly;
     height: 100%;
   }
+
+  .drake-img {
+    margin: 24px 0;
+  }
+
+  .about-cnt h2 {
+    line-height: 1.75em;
+    margin-bottom: 16px;
+  }
 }
 
 /* 400px Max-Width */
@@ -1125,6 +1141,14 @@ footer ul li {
 
   .project-card {
     max-height: 400px;
+  }
+}
+
+/* 375px Max-Width */
+
+@media (max-width: 375px) {
+  .email {
+    font-size: 1.5em;
   }
 }
 
