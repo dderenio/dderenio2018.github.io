@@ -290,10 +290,6 @@ header {
   padding-left: 0;
 }
 
-.main-nav-list li a:hover {
-  border-bottom: 1px solid #2d2d2d;
-}
-
 /* Home */
 
 .home {
