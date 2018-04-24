@@ -1034,8 +1034,6 @@ footer ul li {
     align-self: flex-end;
   }
   .case-summary li {
-    margin-bottom: 32px;
-    text-align: lef;
   }
   .case-summary li:last-child {
     margin-bottom: 0;
@@ -1104,15 +1102,15 @@ footer ul li {
   }
 
   .case-summary {
-    margin-top: 0;
+    margin-top: 16px;
     align-self: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: space-between;
   }
 
   .case-summary li {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .case-data {
@@ -1149,6 +1147,10 @@ footer ul li {
 @media (max-width: 375px) {
   .email {
     font-size: 1.5em;
+  }
+
+  .case-summary li {
+    margin-bottom: 16px;
   }
 }
 
