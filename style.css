@@ -508,7 +508,7 @@ footer ul li {
 
 .case-data h4 {
   font-weight: 300;
-  line-height: 40px;
+  line-height: 2em;
   color: #7a7a7a;
 }
 
@@ -1085,7 +1085,7 @@ footer ul li {
   }
 
   #projects-wrap {
-    padding-top: 64px;
+    padding-top: 48px;
   }
 
   .case-wrap {
