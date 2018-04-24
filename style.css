@@ -986,6 +986,23 @@ footer ul li {
   .drake-img {
     margin: 40px 0;
   }
+
+  .case-spacing {
+    margin: 64px 0;
+  }
+
+  .solution-wrap {
+    padding-top: 64px;
+  }
+
+  .img-margin,
+  .img-wrap-multi {
+    margin: 56px 0;
+  }
+
+  .footer-cnt {
+    margin-top: 112px;
+  }
 }
 
 /* 600px - Max-Width */
@@ -1043,7 +1060,7 @@ footer ul li {
 
   header {
     width: 100%;
-    padding-top: 48px;
+    padding-top: 32px;
     align-items: center;
     flex-direction: column;
   }
@@ -1054,12 +1071,12 @@ footer ul li {
 
   .main-nav-list {
     justify-content: space-around;
-    margin-top: 32px;
+    margin-top: 24px;
     width: 100%;
   }
 
   .home {
-    height: calc(100vh - 136px);
+    height: calc(100vh - 112px);
   }
 
   #projects-wrap {
@@ -1067,7 +1084,7 @@ footer ul li {
   }
 
   .case-wrap {
-    height: calc(100vh - 136px);
+    height: calc(100vh - 112px);
     align-items: center;
   }
 
@@ -1102,6 +1119,10 @@ footer ul li {
 /* 400px Max-Width */
 
 @media (max-width: 400px) {
+  .wrapper {
+    padding: 0 24px;
+  }
+
   .project-card {
     max-height: 400px;
   }
