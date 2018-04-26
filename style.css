@@ -416,12 +416,6 @@ header {
   padding: 40px;
 }
 
-@media (max-width: 1300px) {
-  .card-wrap {
-    height: auto;
-  }
-}
-
 .project h3 {
   margin-bottom: 4px;
 }
@@ -1177,6 +1171,12 @@ footer ul li {
   }
   .drake-img {
     margin: 40px 0;
+  }
+
+  .main-nav-list li:hover .nav-hover-bg,
+  .about-cnt-bottom ul li:hover .nav-hover-bg,
+  .email-wrap:hover .nav-hover-bg {
+    -webkit-animation: none;
   }
 }
 
