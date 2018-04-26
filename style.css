@@ -1187,6 +1187,7 @@ footer ul li {
   .about-cnt-bottom ul li:hover .nav-hover-bg,
   .email-wrap:hover .nav-hover-bg {
     -webkit-animation: none;
+    display: none;
   }
 }
 
