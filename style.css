@@ -1189,6 +1189,11 @@ footer ul li {
     -webkit-animation: none;
     display: none;
   }
+
+  #top-btn {
+    bottom: 25px;
+    right: 25px;
+  }
 }
 
 /* 675px - Max-Width */
