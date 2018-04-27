@@ -233,6 +233,10 @@ h5 {
   font-size: 1.75em;
 }
 
+.test-name {
+  font-family: "Playfair Display";
+}
+
 /* HEADER */
 
 header {
@@ -889,7 +893,7 @@ footer ul li {
   color: #7a7a7a;
 }
 
-.analytics-datali:last-child {
+.analytics-data li:last-child {
   margin-bottom: 0;
 }
 
@@ -923,6 +927,16 @@ footer ul li {
 
 .legend-6 {
   background-color: #785ef0;
+}
+
+.test-quote {
+  font-size: 5em;
+  color: #454555;
+  position: absolute;
+  top: 110px;
+  left: -50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .testimonial {
@@ -1224,6 +1238,11 @@ footer ul li {
 
   .testimonial h4 {
     text-align: left;
+  }
+
+  .test-quote {
+    top: 10px;
+    left: -5px;
   }
 }
 
