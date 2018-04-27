@@ -1293,7 +1293,7 @@ footer ul li {
 @media (max-width: 600px) {
     .main-text {
         max-width: 365px;
-        min-width: 325px;
+        min-width: 300px;
     }
 
     .logo-text-header,
