@@ -1254,7 +1254,8 @@ footer ul li {
 
 @media (max-width: 675px) {
     .main-text {
-        max-width: 415px;
+        max-width: 525px;
+        font-size: 1.75em;
     }
     #projects-wrap {}
     .card-wrap {
@@ -1290,6 +1291,10 @@ footer ul li {
 /* 600px - Max-Width */
 
 @media (max-width: 600px) {
+    .main-text {
+        max-width: 325px;
+    }
+
     .logo-text-header,
     .logo-line-header {
         display: none;
