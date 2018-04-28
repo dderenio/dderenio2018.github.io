@@ -2,361 +2,368 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Drake Dereniowski | UX Designer | LVMH Case Study</title>
+    <meta charset="UTF-8">
+    <title>Drake Dereniowski | UX Designer | LVMH Case Study</title>
 
-  <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <div class="wrapper" id="top-page">
+    <div class="wrapper" id="top-page">
 
-    <header>
+        <header>
 
-      <h5 class="logo">
-        <a href="index.html">
+            <h5 class="logo">
+                <a href="index.html">
           <span class="logo-name">Drake</span>
           <span class="logo-line"></span>
           <span class="logo-text">The Designer</span>
         </a>
-      </h5>
+            </h5>
 
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a href="index.html#projects-wrap">Work</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="mailto:drake.dereniowski@gmail.com">
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li>
+                        <a href="index.html#projects-wrap">Work</a>
+                        <span class="nav-hover-bg"></span>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                        <span class="nav-hover-bg"></span>
+                    </li>
+                    <li>
+                        <a href="mailto:drake.dereniowski@gmail.com">
               Contact
             </a>
-          </li>
-        </ul>
-      </nav>
+                        <span class="nav-hover-bg"></span>
+                    </li>
+                </ul>
+            </nav>
 
-    </header>
+        </header>
 
 
-    <div class="case-wrap">
-      <section class="case-intro">
-        <h1 class="case-title">LVMH Group</h1>
+        <div class="case-wrap">
+            <section class="case-intro">
+                <h1 class="case-title">LVMH Group</h1>
 
-        <section class="case-data">
-          <h4>LVMH’s internal content management system was in need of upgrades to support new features and to improve the overall user experience. Utilizing the best UX practices, it was our goal to improve the CMS along with designing and implementing the new features required by LVMH.</h4>
+                <section class="case-data">
+                    <h4>LVMH’s internal content management system was in need of upgrades to support new features and to improve the overall user experience. Utilizing the best UX practices, it was our goal to improve the CMS along with designing and implementing the new features required by LVMH.</h4>
 
-          <ul class="case-summary">
-            <li>
-              <span>Role: </span> UX/UI Designer</li>
-            <li>
-              <span>Context: </span>Internship Project</li>
-            <li>
-              <span>Date: </span>November 2017</li>
-          </ul>
+                    <ul class="case-summary">
+                        <li>
+                            <span>Role: </span> UX/UI Designer</li>
+                        <li>
+                            <span>Context: </span>Internship Project</li>
+                        <li>
+                            <span>Date: </span>November 2017</li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+
+    </div>
+
+
+    <section class="img-wrap foo">
+        <img class="case-img" src="img/LVMH/Multi-Browser-LVMH.png">
+    </section>
+
+    <div class="wrapper case-section case-spacing">
+        <h2 class="case-cnt-left foo">Initial Analysis</h2>
+
+        <a href="#top-page" id="top-btn"></a>
+
+        <section class="case-cnt-right foo">
+            <p>Upon being tasked with this project, our team went through the current CMS looking for problems we could identify with the system as it currently is designed. To begin this process, we compiled a list of all the actions within the CMS and attempted to complete each task, taking notes where issues arose. Some of the inconsistencies and user experience issues that our team were able to identify included: </p>
+
+            <ul class="case-list-desc">
+                <li>
+                    <img src="img/LVMH/icons/Sad%20User.svg ">
+
+                    <section class="list-cnt ">
+                        <span class="case-list-title ">Lack of Feedback States</span>
+                        <p>Throughout the entire system, we noticed that there was a lack of feedback when interacting with different components of the UI. Actions such as hovering, dropdown’s, button presses, image uploads and text inputs all had little to no feedback, which ultimately left users confused when interacting with the CMS.
+                        </p>
+                    </section>
+                </li>
+
+                <li>
+                    <img src="img/LVMH/icons/Missing.svg ">
+
+                    <section class="list-cnt">
+                        <span class="case-list-title ">Button/Icon Repetition & Inconsistencies</span>
+                        <p>Repeating buttons and icons with the same style were used throughout the interface, however in different sections, they performed different actions. This once again was very confusing as users had to re-learn the actions related to each button and icon in the different areas of the CMS.
+                        </p>
+                    </section>
+                </li>
+
+                <li>
+                    <img src="img/LVMH/icons/Text%20Input.svg ">
+
+                    <section class="list-cnt">
+                        <span class="case-list-title ">Missing Dropdown & Text Input Labels</span>
+                        <p>Dropdown and text input labels are placed within text input areas. While this doesn’t initially pose any issues, when users interact with the system and begin applying filters and filling out text inputs, they are left with a system that doesn’t remind them of the selections they have made and are forced to remember the category of each filter.
+                        </p>
+                    </section>
+                </li>
+
+            </ul>
+
+            <section class="user-journey foo">
+                <h3>User Journey Flows</h3>
+
+                <p>After analyzing the current pain points within the CMS and identifying the areas that required the most attention, we then took a step back and mapped out the user journey flows for each section. </p>
+            </section>
+
+            <img class="case-img-inline case-img-inline-alt foo" src="img/LVMH/user-journey-2.png ">
+
         </section>
-      </section>
     </div>
 
-  </div>
+    <div class="solution-wrap">
+        <div class="wrapper case-section">
+            <h2 class="case-cnt-left foo">CMS Sections</h2>
+
+            <section class="case-cnt-right foo">
+                <p>After compiling an asset library and identifying the individual components within the interface that needed the most attention, we were then able to re-design each section of the CMS. The sections that we focused on included:</p>
+
+                <ul class="list-point ">
+                    <li>Login Area</li>
+                    <li>Home Dashboard</li>
+                    <li>Navigation</li>
+                    <li>Product Tools</li>
+                    <li>Home Builder (Ad Campaigns)</li>
+                    <li>Communication Tools (Ad Campaigns)</li>
+                </ul>
+
+                <h3>Home Dashboard</h3>
+                <p>The current dashboard is quite simplistic, and provides a quick overview of the number of products, stores and images within the CMS. While this quickly provides users with the most important information within the system, the dashboard could provide much more information given the large amount of unused space in the screen.</p>
+            </section>
+        </div>
+
+        <section class="img-wrap img-margin foo">
+            <img class="case-img" src="img/LVMH/LVMH-Home.png ">
+        </section>
+
+        <div class="wrapper case-section foo">
+            <section class="case-cnt-right-extra ">
+                <h3>Navigation</h3>
+                <p>When updating the navigation, our team decided to employ a fixed vertical navigation on the left side of the screen. By default the navigation is collapsed, however, when users hover on the navigation, it expands and acts as an overlay on the current screen. This was intentionally designed in order to maximise the screen real estate due to the nature of the content being viewed.</p>
+            </section>
+        </div>
+
+        <section class="img-wrap img-margin foo">
+            <img class="case-img" src="img/LVMH/LVMH-Nav.png ">
+        </section>
+
+        <div class="wrapper case-section foo">
+            <section class="case-cnt-right-extra ">
+                <h3>Product Management</h3>
+                <p>The overall functionality of the product management section didn’t change a lot during our re-design, however the ways in which text input and dropdown filters worked certainly did. As stated previously, a main goal of our re-design was to provide a constant communication for every action that was completed in order to improve the feedback states between the system and user. These included various hover states, text input selections, as well as dropdown filters. </p>
+            </section>
+        </div>
+
+        <section class="img-wrap-multi foo">
+            <img class="case-img-multi" src="img/LVMH/LVMH%20-%20Product%20Management.png ">
+        </section>
+
+        <div class="wrapper case-section foo">
+            <section class="case-cnt-right-extra ">
+                <h3>Micro-Interactions</h3>
+                <p>A key focus of our re-design was to improve micro-interactions in order to improve the communication between the user and system. This challenged our design team to think about all the different states of interactable elements within the CMS and design them in a way which clearly communicated the status of the system to the user. Demonstrated below is how all text input fields work within the various interactable states of the CMS.</p>
+            </section>
+        </div>
+
+        <section class="img-wrap img-margin foo">
+            <video autoplay loop class="case-img" src="img/LVMH/LVMH - Filters .mp4"></video>
+        </section>
+
+        <div class="wrapper case-section foo">
+            <section class="case-cnt-right-extra ">
+                <h3>Home Builder</h3>
+                <p>Designing the CMS Home Builder, was one of the most challenging design problems I’ve ever attempted to solve due to the large complexity and number of features within the section.</p>
+                <p>The Home Builder section allows employees to build “homepage blocks” that are accessible through the iOS application used by employees in-store. Each home block is completely customisable and can be viewed across all LVMH stores or specific regions, and markets depending on the content being promoted.</p>
+                <p>When re-designing the Home Builder section, we wanted to construct a process that was incredibly simple and efficient for employees by reducing the number of screens they had to interact with. Focusing on this design goal allowed us to completely re-structure the Home Builder section in way that provides as much information as possible to employees as quick as possible. </p>
+            </section>
+        </div>
+
+        <section class="img-wrap img-margin foo">
+            <img class="case-img" src="img/LVMH/LVMH-Home-Builder.png ">
+        </section>
+
+        <div class="wrapper case-section foo">
+            <section class="case-cnt-right-extra ">
+                <p>While these improvements in the interface corrected a lot of the exisiting issues within the Home Builder section, there were now additional features that needed to be added into the overall functionality to provide employees with a more powerful system. These new features included:</p>
+
+                <ul class="list-point list-point-alt ">
+                    <li>Block visible start/end dates</li>
+                    <li>Online/Offline toggle for individual blocks</li>
+                    <li>Multiple product filters & keywords</li>
+                    <li>Slideshow Gallery</li>
+                </ul>
+            </section>
+        </div>
 
 
-  <section class="img-wrap foo">
-    <img class="case-img" src="img/LVMH/Multi-Browser-LVMH.png">
-  </section>
+        <section class="img-wrap-multi foo">
+            <img class="case-img-multi" src="img/LVMH/LVMH-Home-Multi.png ">
+        </section>
 
-  <div class="wrapper case-section case-spacing">
-    <h2 class="case-cnt-left foo">Initial Analysis</h2>
+        <div class="wrapper case-section foo">
+            <section class="case-cnt-right-extra ">
+                <h3>Communication Tools</h3>
+                <p>The communication tools section allows employees to manage specific advertising campaigns for collections created throughout the year. Depending on the collection, employees can upload a selection of product related photos and from there, they have the ability to manually add related products to each photo. This allows for employees to showcase LVMH photos to clients, while also providing them with a direct link to view each product within the photo.</p>
 
-    <a href="#top-page" id="top-btn"></a>
+                <p>Throughout the re-design, the functionality of the communication tools did not change much, rather we sought ways to improve the interface by utilsing the best UX practices and maintaining a consistent look and feel throughout the CMS. </p>
+            </section>
+        </div>
 
-    <section class="case-cnt-right foo">
-      <p>Upon being tasked with this project, our team went through the current CMS looking for problems we could identify with the system as it currently is designed. To begin this process, we complied a list of all the actions within the CMS and attempted to complete each task, taking notes where issues arose. Some of the inconsistencies and user experience issues that our team were able to identify included: </p>
+        <section class="img-wrap img-margin foo">
+            <img class="case-img" src="img/LVMH/LVMH-Communication-Tools.png ">
+        </section>
 
-      <ul class="case-list-desc">
-        <li>
-          <img src="img/LVMH/icons/Sad%20User.svg ">
+        <div class="wrapper case-section foo">
+            <section class="case-cnt-right-extra ">
+                <p>Similar to the Home Builder, employees have the abilitiy to customise the cover of the Ad Campaign as well as the content within. Once the details of the cover have been established, users can begin to upload photos to the collection where they then have the ability to tag related LVMH products.</p>
+            </section>
+        </div>
 
-          <section class="list-cnt ">
-            <span class="case-list-title ">Lack of Feedback States</span>
-            <p>Throughout the entire system, we noticed that there was a lack of feedback when interacting with different components of the UI. Actions such as hovering, dropdown’s, button presses, image uploads and text inputs all had little to no feedback, which ultimately left users confused when interacting with the CMS.
-            </p>
-          </section>
-        </li>
+        <section class="img-wrap img-margin foo">
+            <img class="case-img" src="img/LVMH/Multi-Browser-LVMH-Communication-Tools.png">
+        </section>
 
-        <li>
-          <img src="img/LVMH/icons/Missing.svg ">
-
-          <section class="list-cnt">
-            <span class="case-list-title ">Button/Icon Repetition & Inconsistencies</span>
-            <p>Repeating buttons and icons with the same style were used throughout the interface, however in different sections, they performed different actions. This once again was very confusing as users had to re-learn the actions related to each button and icon in the different areas of the CMS.
-            </p>
-          </section>
-        </li>
-
-        <li>
-          <img src="img/LVMH/icons/Text%20Input.svg ">
-
-          <section class="list-cnt">
-            <span class="case-list-title ">Missing Dropdown & Text Input Labels</span>
-            <p>Dropdown and text input labels are placed within text input areas. While this doesn’t initially pose any issues, when users interact with the system and begin applying filters and filling out text inputs, they are left with a system that doesn’t remind them of the selections they have made and are forced to remember the category of each filter.
-            </p>
-          </section>
-        </li>
-
-      </ul>
-
-      <section class="user-journey foo">
-        <h3>User Journey Flows</h3>
-
-        <p>After analyzing the current pain points within the CMS and identifying the areas that required the most attention, we then took a step back and mapped out the user journey flows for each section. </p>
-      </section>
-
-      <img class="case-img-inline case-img-inline-alt foo" src="img/LVMH/user-journey-2.png ">
-
-    </section>
-  </div>
-
-  <div class="solution-wrap">
-    <div class="wrapper case-section">
-      <h2 class="case-cnt-left foo">CMS Sections</h2>
-
-      <section class="case-cnt-right foo">
-        <p>After compiling an asset library and identifying the individual components within the interface that needed the most attention, we were then able to re-design each section of the CMS. The sections that we focused on included:</p>
-
-        <ul class="list-point ">
-          <li>Login Area</li>
-          <li>Home Dashboard</li>
-          <li>Navigation</li>
-          <li>Product Tools</li>
-          <li>Home Builder (Ad Campaigns)</li>
-          <li>Communication Tools (Ad Campaigns)</li>
-        </ul>
-
-        <h3>Home Dashboard</h3>
-        <p>The current dashboard is quite simplistic, and provides a quick overview of the number of products, stores and images within the CMS. While this quickly provides users with the most important information within the system, the dashboard could provide much more information given the large amount of unused space in the screen.</p>
-      </section>
     </div>
 
-    <section class="img-wrap img-margin foo">
-      <img class="case-img" src="img/LVMH/LVMH-Home.png ">
-    </section>
+    <div class="wrapper case-section case-spacing foo">
+        <h2 class="case-cnt-left ">Final Takeaways</h2>
 
-    <div class="wrapper case-section foo">
-      <section class="case-cnt-right-extra ">
-        <h3>Navigation</h3>
-        <p>When updating the navigation, our team decided to employ a fixed vertical navigation on the left side of the screen. By default the navigation is collapsed, however, when users hover on the navigation, it expands and acts as an overlay on the current screen. This was intentionally designed in order to maximise the screen real estate due to the nature of the content being viewed.</p>
-      </section>
-    </div>
+        <section class="case-cnt-right ">
 
-    <section class="img-wrap img-margin foo">
-      <img class="case-img" src="img/LVMH/LVMH-Nav.png ">
-    </section>
+            <p>The LVMH CMS re-design was a very large and complex working tool that took several months to design and create. In order to arrive at the final designs of the CMS, we completed a thorough analysis of all the sections, identified components that needed to be updated, and worked with the brand to ensure all their demands were met in terms of overall performance. After multiple design iteration sessions, we were successfully able to re-design the CMS in a way that corrected all of the prior usability issues, while also improving and adding many new features.</p>
+        </section>
 
-    <div class="wrapper case-section foo">
-      <section class="case-cnt-right-extra ">
-        <h3>Product Management</h3>
-        <p>The overall functionality of the product management section didn’t change a lot during our re-design, however the ways in which text input and dropdown filters worked certainly did. As stated previously, a main goal of our re-design was to provide a constant communication for every action that was completed in order to improve the feedback states between the system and user. These included various hover states, text input selections, as well as dropdown filters. </p>
-      </section>
-    </div>
-
-    <section class="img-wrap-multi foo">
-      <img class="case-img-multi" src="img/LVMH/LVMH%20-%20Product%20Management.png ">
-    </section>
-
-    <div class="wrapper case-section foo">
-      <section class="case-cnt-right-extra ">
-        <h3>Micro-Interactions</h3>
-        <p>A key focus of our re-design was to improve micro-interactions in order to improve the communication between the user and system. This challenged our design team to think about all the different states of interactable elements within the CMS and design them in a way which clearly communicated the status of the system to the user. Demonstrated below is how all text input fields work within the various interactable states of the CMS.</p>
-      </section>
-    </div>
-
-    <section class="img-wrap img-margin foo">
-      <video autoplay loop class="case-img" src="img/LVMH/LVMH%20-%20Filters%20.mov "></video>
-    </section>
-
-    <div class="wrapper case-section foo">
-      <section class="case-cnt-right-extra ">
-        <h3>Home Builder</h3>
-        <p>Designing the CMS Home Builder, was one of the most challenging design problems I’ve ever attempted to solve due to the large complexity and number of features within the section.</p>
-        <p>The Home Builder section allows employees to build “homepage blocks” that are accessible through the iOS application used by employees in-store. Each home block is completely customisable and can be viewed across all LVMH stores or specific regions, and markets depending on the content being promoted.</p>
-        <p>When re-designing the Home Builder section, we wanted to construct a process that was incredibly simple and efficient for employees by reducing the number of screens they had to interact with. Focusing on this design goal allowed us to completely re-structure the Home Builder section in way that provides as much information as possible to employees as quick as possible. </p>
-      </section>
-    </div>
-
-    <section class="img-wrap img-margin foo">
-      <img class="case-img" src="img/LVMH/LVMH-Home-Builder.png ">
-    </section>
-
-    <div class="wrapper case-section foo">
-      <section class="case-cnt-right-extra ">
-        <p>While these improvements in the interface corrected a lot of the exisiting issues within the Home Builder section, there were now additional features that needed to be added into the overall functionality to provide employees with a more powerful system. These new features included:</p>
-
-        <ul class="list-point list-point-alt ">
-          <li>Block visible start/end dates</li>
-          <li>Online/Offline toggle for individual blocks</li>
-          <li>Multiple product filters & keywords</li>
-          <li>Slideshow Gallery</li>
-        </ul>
-      </section>
     </div>
 
 
-    <section class="img-wrap-multi foo">
-      <img class="case-img-multi" src="img/LVMH/LVMH-Home-Multi.png ">
-    </section>
 
-    <div class="wrapper case-section foo">
-      <section class="case-cnt-right-extra ">
-        <h3>Communication Tools</h3>
-        <p>The communication tools section allows employees to manage specific advertising campaigns for collections created throughout the year. Depending on the collection, employees can upload a selection of product related photos and from there, they have the ability to manually add related products to each photo. This allows for employees to showcase LVMH photos to clients, while also providing them with a direct link to view each product within the photo.</p>
+    <footer>
+        <div class="wrapper ">
+            <section class="footer-cnt ">
 
-        <p>Throughout the re-design, the functionality of the communication tools did not change much, rather we sought ways to improve the interface by utilsing the best UX practices and maintaining a consistent look and feel throughout the CMS. </p>
-      </section>
-    </div>
-
-    <section class="img-wrap img-margin foo">
-      <img class="case-img" src="img/LVMH/LVMH-Communication-Tools.png ">
-    </section>
-
-    <div class="wrapper case-section foo">
-      <section class="case-cnt-right-extra ">
-        <p>Similar to the Home Builder, employees have the abilitiy to customise the cover of the Ad Campaign as well as the content within. Once the details of the cover have been established, users can begin to upload photos to the collection where they then have the ability to tag related LVMH products.</p>
-      </section>
-    </div>
-
-    <section class="img-wrap img-margin foo">
-      <img class="case-img" src="img/LVMH/Multi-Browser-LVMH-Communication-Tools.png">
-    </section>
-
-  </div>
-
-  <div class="wrapper case-section case-spacing foo">
-    <h2 class="case-cnt-left ">Final Takeaways</h2>
-
-    <section class="case-cnt-right ">
-
-      <p>The LVMH CMS re-design was a very large and complex working tool that took several months to design and create. In order to arrive at the final designs of the CMS, we completed a thorough analysis of all the sections, identified components that needed to be updated, and worked with the brand to ensure all their demands were met in terms of overall performance. After multiple design iteration sessions, we were successfully able to re-design the CMS in a way that corrected all of the prior usability issues, while also improving and adding many new features.</p>
-    </section>
-
-  </div>
-
-
-
-  <footer>
-    <div class="wrapper ">
-      <section class="footer-cnt ">
-
-        <h5 class="logo ">
-          <a href="index.html ">
+                <h5 class="logo ">
+                    <a href="index.html ">
             <span class="logo-name ">Drake</span>
             <span class="logo-line "></span>
             <span class="logo-text ">The Designer</span>
           </a>
-        </h5>
+                </h5>
 
-        <ul>
-          <li>
-            <a href="mailto:drake.dereniowski@gmail.com ">Email</a>
-          </li>
-          <li>
-            <a target="_blank " href="https://www.linkedin.com/in/drakedereniowski/ ">LinkedIn</a>
-          </li>
-          <li>
-            <a target="_blank" href="img/Drake%20Dereniowski%20-%20UX_UI%20Designer%20-%20Milan,%20Italy%20(Final).pdf">Resume</a>
-          </li>
-        </ul>
+                <ul>
+                    <li>
+                        <a href="mailto:drake.dereniowski@gmail.com ">Email</a>
+                    </li>
+                    <li>
+                        <a target="_blank " href="https://www.linkedin.com/in/drakedereniowski/ ">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="img/Drake%20Dereniowski%20-%20UX_UI%20Designer%20-%20Milan,%20Italy%20(Final).pdf">Resume</a>
+                    </li>
+                </ul>
 
-      </section>
-    </div>
-  </footer>
-
-
+            </section>
+        </div>
+    </footer>
 
 
-  <!-- Smooth Scroll -->
-  <script src="JS/smooth-scroll.js "></script>
-
-  <!--Scroll Reveal-->
-  <script src="JS/scrollreveal.js "></script>
 
 
-  <!-- Smooth Scroll Script -->
+    <!-- Smooth Scroll -->
+    <script src="JS/smooth-scroll.js "></script>
 
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      // Selectors
-      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
-      header: null, // Selector for fixed headers (must be a valid CSS selector)
-
-      // Speed & Easing
-      speed: 1500, // Integer. How fast to complete the scroll in milliseconds
-      offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-      easing: 'easeOutQuad', // Easing pattern to use
-      customEasing: function (time) {
-
-        // Function. Custom easing pattern
-        // If this is set to anything other than null, will override the easing option above
-
-        // return <your formulate with time as a multiplier>
-
-        // Example: easeInOut Quad
-        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
-
-      },
-
-      // Callback API
-      before: function (anchor, toggle) {}, // Callback to run before scroll
-      after: function (anchor, toggle) {} // Callback to run after scroll
-    });
-  </script>
+    <!--Scroll Reveal-->
+    <script src="JS/scrollreveal.js "></script>
 
 
-  <!--- Scroll Reveal Script -->
+    <!-- Smooth Scroll Script -->
 
-  <script>
-    window.sr = ScrollReveal();
-    sr.reveal('.foo');
-    sr.reveal('.bar');
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            // Selectors
+            ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+            header: null, // Selector for fixed headers (must be a valid CSS selector)
 
-    sr.reveal('.foo', {
-      duration: 1500
-    })
+            // Speed & Easing
+            speed: 1500, // Integer. How fast to complete the scroll in milliseconds
+            offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+            easing: 'easeOutQuad', // Easing pattern to use
+            customEasing: function(time) {
 
-    sr.reveal('.foo', {
-      scale: 1
-    });
+                // Function. Custom easing pattern
+                // If this is set to anything other than null, will override the easing option above
 
-    sr.reveal('.foo', {
-      distance: '40px'
-    });
+                // return <your formulate with time as a multiplier>
 
-    sr.reveal('.foo', {
-      easing: 'ease-out'
-    });;
-  </script>
+                // Example: easeInOut Quad
+                return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+            },
+
+            // Callback API
+            before: function(anchor, toggle) {}, // Callback to run before scroll
+            after: function(anchor, toggle) {} // Callback to run after scroll
+        });
+
+    </script>
 
 
-  <!-- Scroll To Top Button Script-->
-  <script>
-    window.onscroll = function () {
-      scrollFunction()
-    };
+    <!--- Scroll Reveal Script -->
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 1250 || document.documentElement.scrollTop > 1250) {
-        document.getElementById("top-btn").style.display = "block";
-      } else {
-        document.getElementById("top-btn").style.display = "none";
-      }
-    }
-  </script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.foo');
+        sr.reveal('.bar');
+
+        sr.reveal('.foo', {
+            duration: 1500
+        })
+
+        sr.reveal('.foo', {
+            scale: 1
+        });
+
+        sr.reveal('.foo', {
+            distance: '40px'
+        });
+
+        sr.reveal('.foo', {
+            easing: 'ease-out'
+        });;
+
+    </script>
+
+
+    <!-- Scroll To Top Button Script-->
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1250 || document.documentElement.scrollTop > 1250) {
+                document.getElementById("top-btn").style.display = "block";
+            } else {
+                document.getElementById("top-btn").style.display = "none";
+            }
+        }
+
+    </script>
 
 
 </body>
