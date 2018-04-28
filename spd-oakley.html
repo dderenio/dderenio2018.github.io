@@ -242,20 +242,27 @@
             <span class="logo-text">The Designer</span>
           </a>
         </h5>
+
         <ul>
           <li>
             <a href="mailto:drake.dereniowski@gmail.com">Email</a>
+            <span class="nav-hover-bg"></span>
           </li>
           <li>
             <a target="_blank" href="https://www.linkedin.com/in/drakedereniowski/">LinkedIn</a>
+            <span class="nav-hover-bg"></span>
+
           </li>
           <li>
             <a target="_blank" href="img/Drake%20Dereniowski%20-%20UX_UI%20Designer%20-%20Milan,%20Italy%20(Final).pdf">Resume</a>
+            <span class="nav-hover-bg"></span>
+
           </li>
         </ul>
       </section>
     </div>
   </footer>
+
 
   <!-- Smooth Scroll -->
   <script src="JS/smooth-scroll.js "></script>
@@ -276,7 +283,7 @@
       speed: 1500, // Integer. How fast to complete the scroll in milliseconds
       offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
       easing: 'easeOutQuad', // Easing pattern to use
-      customEasing: function (time) {
+      customEasing: function(time) {
 
         // Function. Custom easing pattern
         // If this is set to anything other than null, will override the easing option above
@@ -289,9 +296,10 @@
       },
 
       // Callback API
-      before: function (anchor, toggle) {}, // Callback to run before scroll
-      after: function (anchor, toggle) {} // Callback to run after scroll
+      before: function(anchor, toggle) {}, // Callback to run before scroll
+      after: function(anchor, toggle) {} // Callback to run after scroll
     });
+
   </script>
 
 
@@ -317,12 +325,13 @@
     sr.reveal('.foo', {
       easing: 'ease-out'
     });;
+
   </script>
 
 
   <!-- Scroll To Top Button Script-->
   <script>
-    window.onscroll = function () {
+    window.onscroll = function() {
       scrollFunction()
     };
 
@@ -333,6 +342,7 @@
         document.getElementById("top-btn").style.display = "none";
       }
     }
+
   </script>
 
 
