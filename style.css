@@ -630,9 +630,10 @@ footer ul li {
 
 .case-title {
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.5em;
   color: #7a7a7a;
-  max-width: 295px;
+  min-width: 305px;
+  max-width: 455px;
 }
 
 .case-data {
@@ -1172,7 +1173,7 @@ footer ul li {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    width: 100%;
+    max-width: 100%;
   }
   .case-title {
     display: -webkit-box;
